@@ -1,0 +1,12 @@
+<!-- user-list.component.html -->
+<div *ngIf="users.length > 0">
+  <ul>
+    <li *ngFor="let user of users">
+      {{ user.name }} ({{ user.email }})
+    </li>
+  </ul>
+</div>
+<div *ngIf="users.length === 0">
+  No users found.
+</div>
+
